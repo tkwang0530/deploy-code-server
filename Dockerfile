@@ -22,9 +22,14 @@ RUN sudo chown -R coder:coder /home/coder/.local
 # You can add custom software and dependencies for your environment below
 # -----------
 
+# Install Python related
+RUN apt-get -y update
+RUN apt-get -y upgrade
+RUN apt-get install -y python3 python3-pip pylint3
+
 # Install a VS Code extension:
 # Note: we use a different marketplace than VS Code. See https://github.com/cdr/code-server/blob/main/docs/FAQ.md#differences-compared-to-vs-code
-# RUN code-server --install-extension esbenp.prettier-vscode
+RUN code-server --install-extension esbenp.prettier-vscode
 
 # Install apt packages:
 # RUN sudo apt-get install -y ubuntu-make
