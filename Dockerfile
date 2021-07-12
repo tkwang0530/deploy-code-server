@@ -30,7 +30,6 @@ RUN sudo apt-get install -y python3 python3-pip pylint3
 RUN code-server --install-extension shan.code-settings-sync
 RUN code-server --install-extension esbenp.prettier-vscode
 RUN code-server --install-extension ms-python.python
-RUN code-server --install-extension ms-python.vscode-pylance
 RUN code-server --install-extension vscodevim.vim
 
 # Install apt packages:
