@@ -23,7 +23,7 @@ RUN sudo chown -R coder:coder /home/coder/.local
 # -----------
 
 # Install Python3 related
-RUN apt-get install -y python3 python3-pip pylint3
+RUN sudo apt-get install -y python3 python3-pip pylint3
 
 # Install a VS Code extension:
 # Note: we use a different marketplace than VS Code. See https://github.com/cdr/code-server/blob/main/docs/FAQ.md#differences-compared-to-vs-code
