@@ -23,7 +23,6 @@ RUN sudo chown -R coder:coder /home/coder/.local
 # -----------
 
 # Install Python related
-RUN apt-get -y update
 RUN apt-get -y upgrade
 RUN apt-get install -y python3 python3-pip pylint3
 
