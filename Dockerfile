@@ -29,7 +29,7 @@ RUN sudo apt-get install -y python3 python3-pip pylint3
 # Note: we use a different marketplace than VS Code. See https://github.com/cdr/code-server/blob/main/docs/FAQ.md#differences-compared-to-vs-code
 RUN code-server --install-extension esbenp.prettier-vscode
 RUN code-server --install-extension ms-python.python
-RUN code-server --install-extension himanoa.python-autopep8
+RUN code-server --install-extension ms-python.vscode-pylance
 RUN code-server --install-extension vscodevim.vim
 
 # Install apt packages:
