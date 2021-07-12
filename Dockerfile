@@ -6,6 +6,8 @@ USER coder
 # Apply VS Code settings
 COPY deploy-container/settings.json .local/share/code-server/User/settings.json
 
+# Apply custom .bash_profile file
+COPY deploy-container/.bash_profile .local/share/code-server/User/.bash_profile
 # Use bash shell
 ENV SHELL=/bin/bash
 
